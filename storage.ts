@@ -51,6 +51,6 @@ export const deleteUser =async (key: string, id: number) => {
         await AsyncStorage.setItem(key, JSON.stringify(updateUserList));
         console.log('User deleted successfully!')
     } catch (error) {
-        console.log('error in retrieving users');
+        console.log('error in deleting user');
     } 
 }
